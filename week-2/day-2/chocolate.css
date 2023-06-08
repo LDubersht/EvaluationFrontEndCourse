@@ -1,0 +1,27 @@
+#plate {
+    display: inline-block;
+    position: relative;
+    background-color: black;
+    width: 512px;
+    height: 256px;
+    top: 64px;
+    left: 30%;
+}
+
+#ln {
+    position: absolute;
+    background-color: darkred;
+    width: 100%;
+    height: 6px;
+    top:125px; 
+}
+
+.sq {
+    float: left;
+    background-color: #66320E;
+    width: 118px;
+    height: 118px;
+    margin: 5px;
+
+}
+

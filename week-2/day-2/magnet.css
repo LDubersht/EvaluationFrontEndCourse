@@ -1,0 +1,30 @@
+#magnet {
+    background-color: magenta;
+    position: relative;
+    width: 20%;
+    height: 300px;
+    top: 0px;
+    left: 40%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#gray {
+    background-color: gray;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+}
+
+#white {
+    background-color: white;
+    position: absolute;
+    width: 64%;
+    height: 240px;
+    top: 0px;
+    left: 18%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
