@@ -1,0 +1,29 @@
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "f m m m m m"
+    "f m m m m m"
+    "f m m m m m"
+    "f m m m m m"
+    "f s s s s s";
+    background-color: lightgrey;   
+    
+}
+
+#navigator{
+    grid-area: f;
+
+    background-color: blueviolet;
+} 
+#chat{
+    
+    grid-area: m;
+    background-color: lightgrey;
+} 
+#input{
+    grid-area: s;
+    background-color: green;
+} 
