@@ -1,29 +1,35 @@
-#container{
-    height: 100vh;
+.box {  
+    height: 97vh;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "f m m m m m"
-    "f m m m m m"
-    "f m m m m m"
-    "f m m m m m"
-    "f s s s s s";
-    background-color: lightgrey;   
-    
+    grid-template-rows: repeat(6,1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-column-gap: 2%;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "n c c c c c"
+      "n c c c c c"
+      "n c c c c c"
+      "n c c c c c"
+      "n c c c c c"
+      "n i i i i i";
+  }
+  
+  .notebook { 
+    grid-area: n;
+
 }
 
-#navigator{
-    grid-area: f;
+.notebookHeader p {
+  word-wrap: break-word;
+}
+  .inputArea {
+    grid-area: i; 
+}
+  
+  .chat {
+    grid-area: c; 
+}
 
-    background-color: blueviolet;
-} 
-#chat{
-    
-    grid-area: m;
-    background-color: lightgrey;
-} 
-#input{
-    grid-area: s;
-    background-color: green;
-} 
+
