@@ -5,7 +5,7 @@
     grid-template-rows: repeat(6,1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-column-gap: 2%;
+    /* grid-column-gap: 2%; */
     grid-row-gap: 20px;
     grid-template-areas:
       "n c c c c c"
@@ -13,23 +13,87 @@
       "n c c c c c"
       "n c c c c c"
       "n c c c c c"
-      "n i i i i i";
+      "n c c c c c"
   }
   
-  .notebook { 
-    grid-area: n;
-
+.notebook { 
+  grid-area: n;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr);
+  background-color: rgb(134, 38, 181);
 }
 
 .notebookHeader p {
   word-wrap: break-word;
-}
-  .inputArea {
-    grid-area: i; 
-}
-  
-  .chat {
-    grid-area: c; 
+  background-color: rgb(143, 43, 113);
+  margin-left: 5%;
 }
 
+.friend p {
+  word-wrap: break-word;
+  background-color: rgb(217, 84, 193);
+  margin-left: 5%;
+  font-size: 26px;
+}
+
+  
+.chat {
+    grid-area: c; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    background-color: lightgray;
+  }
+
+.my p {
+  display: inline-block;
+  word-wrap: break-word;
+  background-color: green;
+  margin-left: 20%;
+  margin-right: 2%;
+
+  justify-content: right; 
+  font-size: 26px;
+  position: absolute;
+  right: 0px;
+}
+
+.companion p{
+  display: inline-block;
+  word-wrap: break-word;
+  background-color: grey;
+  margin-left: 2%;
+  margin-right: 20%;
+  justify-content: start;
+  font-size: 26px;
+}
+
+
+.inputArea {
+    position: relative;
+}
+
+#text2send {
+  display: inline-block;
+  margin: auto;
+  width: 90%;
+  border: 3px solid darkgray;
+  padding: 10px;
+  position: absolute; 
+  bottom: 0px; 
+  left: 0px;
+}
+
+#button2send {
+  margin: auto;
+  width: 10%;
+  border: 3px solid darkgray;
+  padding: 10px;
+  display: inline-block;
+  position: absolute; 
+  bottom: 0px; 
+  right: 0px;
+  background-color: rgb(134, 38, 181);
+}
 
