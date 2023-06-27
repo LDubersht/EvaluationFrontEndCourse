@@ -1,0 +1,84 @@
+body{
+    font-size: 20px;
+}
+
+#container {
+width: 400px;
+display: grid;
+background: rgb(149, 248, 149);
+grid-gap: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+justify-items: start;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-template-areas:
+'n n n n'
+'s s b b'
+'p p p p'
+'v v v t'
+;
+}
+.started{
+    width: 100%;
+    align-content: start;
+    /* background-color: rgba(196, 45, 45, 0.8); */
+    text-align: start;
+    /* padding: 20px; */
+    font-size: 20px;
+    font-weight:bold ;
+}
+
+/* #container > div {
+
+ } */
+input {
+    width: inherit;
+
+}
+#Names {
+    display: inline-block;
+    grid-area: n;
+
+}
+#Salary {
+    grid-area: s;
+
+}
+#BirthDay {
+    grid-area: b;
+}
+
+#Phone {
+    display: inline-block;
+    grid-area: p;
+}
+
+.ended {
+    display: flex;
+    grid-area: t;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+
+ .ended > button{
+    display: flex;
+    font-size: 16px;
+    /* align-self: center;  */
+    font-weight:bold ;
+} 
+
+#BirthDay {
+    grid-area: b;
+}
+#validate {
+    display: inline-block;
+    grid-area: v;
+    font-size: 10px;
+    font-weight:normal;
+    color: brown;
+}
