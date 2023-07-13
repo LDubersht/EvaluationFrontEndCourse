@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <title>Exercises</title>
+</head>
+<body>
+  <header>
+    Books
+  </header>
+  <input type="text" id="number-ISBN"></input>
+  <input type="radio" id="contractISBN" name="contact" value="ISBN" />
+  <label for="contactChoice1">ISBN</label>
+  <input type="radio" id="contractTitle" name="contact" value="title" />
+  <label for="contactChoice2">title</label>
+  <button onclick="raise()">Get Data</button>
+  
+  <script id="result-template" type="text/x-handlebars-template">
+    {{#each responseArr}}
+    <Div class="book">
+      <!-- <h2><a href="{{amazon_product_url}}" target="_blank">{{ bookInfo.title}}</a></h2> -->
+      <h4>By {{volumeInfo.authors}}</h4>
+      <h4 class="publisher">{{volumeInfo.title}}</h4>
+      <p>{{volumeInfo.description}}</p>
+    </Div>
+    {{/each}}  
+  </script>
+  <div id="container">
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="Exercise1.js"></script>
+  <!-- <script src="Controller1.js"></script> -->
+</body>
+</html>
