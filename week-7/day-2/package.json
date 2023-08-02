@@ -1,0 +1,21 @@
+{
+  "name": "npm-package",
+  "version": "1.0.0",
+  "description": "Test 4 package",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "keywords": [
+    "foo"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.7.0",
+    "moment": "^2.29.4",
+    "urllib": "^3.17.1"
+  }
+}
