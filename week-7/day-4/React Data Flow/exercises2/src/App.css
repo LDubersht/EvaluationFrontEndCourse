@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: 10px;
+}
+
+.SimpleText {
+  text-align:start;
+}
+
+.bold-span {
+  font-weight: bold;
+}
